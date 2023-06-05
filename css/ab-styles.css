@@ -1,0 +1,134 @@
+.overlay{
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    }
+
+    .overlay-dark{
+        background-color: rgba(0, 0, 0, 0.85);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        }
+
+.skills{
+  display: grid;
+
+}
+.skill{
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-bottom: 5px;
+    width: fit-content;
+}
+.skill span{
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+.skill img{
+    width: 50px;
+    height: 50px;
+}
+
+.form{
+    font-size: 20px;
+    color: #fff;
+}
+.form dt{
+    
+    margin-top: 10px;
+}
+.form button{
+    font-size: 20px !important;
+    font-weight: 700 !important ;
+    color: #fff;
+    width: 100%;
+    background-color: #cee002 !important;
+    padding: 10px !important;
+
+}
+
+.resume-btn{
+
+    font-size: 20px !important;
+    font-weight: 700 !important ;
+    color: #fff;
+    width: fit-content;
+    background-color: #cee002 !important;
+    padding: 10px !important;
+    border-radius: 5px;
+    border: 10px double #000;
+
+}
+
+.social{
+display: flex;
+flex-wrap: wrap;
+
+}
+.social div{
+    width: 45%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    
+}
+.social a{
+    font-size: 2rem;
+    
+}
+
+.nav-head{
+ display: flex ;
+ list-style: none;
+justify-content: center; 
+
+}
+.nav-head li{
+    margin-left: 15px;
+
+}
+
+.nav-head a{
+    font-size: 1.5rem;
+    color: #fff !important;
+}
+
+
+.nav-head a:hover{
+    font-size: 1.5rem;
+    color: #cee002 !important;
+}
+.nav-opener{
+    display: none;
+}
+
+@media screen and (max-width: 550px){
+
+    
+    .nav-opener{
+        display: block;
+    }
+    .nav-head{
+        display: none;
+    }
+    .social div{
+        padding: 5px;
+    }
+
+}

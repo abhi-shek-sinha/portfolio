@@ -1,0 +1,539 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="ABHISHEK SINHA">
+
+  <!-- Favicons -->
+
+
+  <title>ABHISHEK SINHA</title> 
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+  <link href="css/dark.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="./css/ab-styles.css">
+<!-- email.js intigration -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+      
+        emailjs.init('2vjFXrAXiPXRchDoP');
+    })();
+</script>
+  <script>
+    function submit_form(){
+      var params ={
+        from_name : document.getElementById("vis-name").value,
+        email_id : document.getElementById("vis-email").value,
+        mobile_no : document.getElementById("vis-no").value
+      }
+      
+      emailjs.send("service_zfqz64j","template_78tb0hv",params).then(function(res){
+        alert(" form submit sucessfully " + res.status );
+        var allInputs = document.querySelectorAll('input');
+        allInputs.forEach(singleInput => singleInput.value = '');
+      })
+
+    }
+
+  </script>
+</head>
+<body class="body-fullpage">
+
+  <!-- Loader -->
+  <div class="loader">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+  </div>
+
+  <!-- Content CLick Capture-->
+  <div class="click-capture"></div>
+
+  <!-- Sidebar Menu-->
+  <div class="menu"> 
+    <span class="close-menu icon-cross right-boxed"></span>
+
+    <nav class="nav mobile-menu menu-pagepiling">
+      <ul class="menu-list right-boxed">
+        <li>
+          <a data-menuanchor="main" href="#main">Home</a>
+        </li>
+        <li>
+          <a data-menuanchor="about" href="#about">About</a>
+        </li>
+        <li>
+          <a data-menuanchor="projects" href="#projects">Skills</a>
+        </li>
+        <li>
+          <a data-menuanchor="partners" href="#partners">Experience</a>
+        </li>
+        <li>
+          <a data-menuanchor="testimonials" href="#testimonials">Projects</a>
+        </li>
+        <li>
+          <a data-menuanchor="contacts" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar navbar-2 navbar-white boxed">
+    <div class="navbar-bg"></div>
+    <button type="button" class="navbar-toggle nav-opener " data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+
+    <a class="brand" href="#">
+      <img class="brand-img-white" alt="" src="images/as-logo-2.jpg">
+      <div class="brand-info">
+        <div class="brand-name">Abhishek</div>
+        <div class="brand-text">Sinha</div>
+      </div>
+    </a>
+
+    <address class="navbar-address visible-lg">call me: <span class="text-white">+91-9926977009</span></address>
+
+    <ul class="nav-head">
+      <li>
+        <a data-menuanchor="main" href="#main">Home</a>
+      </li>
+      <li>
+        <a data-menuanchor="about" href="#about">About</a>
+      </li>
+      <li>
+        <a data-menuanchor="projects" href="#projects">Skills</a>
+      </li>
+      <li>
+        <a data-menuanchor="partners" href="#partners">Experience</a>
+      </li>
+      <li>
+        <a data-menuanchor="testimonials" href="#testimonials">Projects</a>
+      </li>
+      <li>
+        <a data-menuanchor="contacts" href="#contacts">Contact</a>
+      </li>
+    </ul>
+ 
+  </header>
+
+
+
+  <!-- Content Page Piling -->
+  <div class="pagepiling">
+
+    <!-- Section Home -->
+    <div class="pp-scrollable scrollable-home text-white section">
+      <div class="scroll-wrap">
+        <div class="section-bg" style="background-image:url(images/bg_banner.jpg);"></div>
+        <div class="scrollable-content">
+          <div class="vertical-centred">
+            <div class="boxed boxed-inner">
+              <div class="vertical-title hidden-xs hidden-sm"><span>Introduction</span></div>
+              <div class="boxed">
+                <div class="container">
+                  <div class="intro">
+                    <div class="row">
+                      <div class="col-md-8 col-lg-7">
+                        <p class="subtitle-top">Hello, Vistor<br> Welcome to my portfolio </p>
+                        <h1 class="display-1 text-white"> I am <br><span class="text-primary">ABHISHEK</span> <br> Web developer  </h1>
+                        <br>
+                        <a target="_blank" download="ABHISHEK-cv" href="./images/AB-Resume.pdf" ><button class="resume-btn"> DOWNLOAD RESUME </button></a>
+                       
+                      </div>
+                      <div class="col-md-4 col-lg-5">
+                        <h1 class=" text-white title-uppercase"><span class="text-primary"> "Imagining"</span> IS the key to be more creative. </h1>
+                        
+                        
+                        
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section About -->
+    <div class="pp-scrollable scrollable-about section">
+      <div class="scroll-wrap">
+        <div class="scrollable-content">
+          <div class="vertical-centred">
+            <div class="boxed boxed-inner">
+              <div class="vertical-title text-white hidden-xs hidden-sm"><span>About Me</span></div>
+              <div class="boxed">
+                <div class="container">
+                  <div class="intro">
+                    <div class="row">
+                      <div class="col-md-5 col-lg-5">
+                        <h2  style="margin-bottom: 1rem !important " class="title-uppercase ">My mission is to<br> <span class="text-primary">develop</span> the best User interfaces</h2>
+                        <p class="text-white" >I am a front-end developer located in hyderabad curently. I am interested in the entire frontend spectrum and working on ambitious projects with positive people.</p>
+                        <p class="text-white">Well-organised person, problem solver, independent employee with high attention to detail. Prefer to work towards atmost perfection.</p>
+                      
+                      </div>
+                      <div class="col-md-6 col-lg-5 col-md-offset-1 col-lg-offset-2">
+                        <div class="dots-image-2">
+                          <img alt="" class="img-responsive" src="images/971.jpg">
+                          <div class="dots"></div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section skills -->
+    <div class="pp-scrollable scrollable-Skills text-white section">
+      <div class="scroll-wrap">
+        <div class="section-bg" style="background-image:url(images/rear-view-programmer-working-all-night-long.jpg);"><div class="overlay" ></div></div>
+        
+        <div class="scrollable-content">
+          <div class="vertical-centred">
+            <div class="boxed boxed-inner">
+              <div class="vertical-title hidden-xs hidden-sm text-primary "><span>technologies</span></div>
+
+              <div class="boxed">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-8" >
+                     <h3 class="text-primary title-uppercase  "  style="margin-bottom: 1rem !important ">languages</h3>
+                     <div class="skills" >
+                      <div class="skill"><img src="./images/html5.png" > <span class="text-white title-uppercase" >html-5 </span> </div>
+                      <div class="skill"><img src="./images/css.png" > <span class="text-white title-uppercase" >css </span></div>
+                      <div class="skill"><img src="./images/jslogo.jpg" > <span class="text-white title-uppercase" >javascript </span> </div>
+                      <!-- <div class="skill"><img src="./images/jquerylogo.png" > <span class="text-white title-uppercase" >jquery </span></div> -->
+                      <div class="skill"><img src="./images/bootstrap logo.png" > <span class="text-white title-uppercase" >bootstrap-5 </span></div>
+                      <div class="skill"><img src="./images/node.png" ><span class="text-white title-uppercase" >node js </span> </div>
+                    </div>
+                    
+                    </div>
+                    <div class="col-lg-4">
+                      <h1 class="text-primary title-uppercase  "  style="margin-bottom: 2rem !important ">my skills</h1>
+                      <p class="text-white">Creating pixel-perfect user-interface with the help of differnt technologies.
+                        <br>
+                        Fetching data of from API's and displaying using front-end tech.
+                      </p>
+                      <p class="text-white" >Also i have good management and communication skill.
+                        <br>
+                        I believe my enthusiasm and self-trained and specialized experience would make me an asset to any team. 
+                      </p>
+
+                    
+                    </div>
+                
+                
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Section Partners -->
+    <div class="pp-scrollable scrollable-partners section">
+      <div class="scroll-wrap">
+        <div class="scrollable-content">
+          <div class="vertical-centred">
+            <div class="boxed boxed-inner">
+              <!-- <div class="vertical-title text-white hidden-xs hidden-sm"><span>Partners</span></div> -->
+              <div class="boxed">
+                <div class="container">
+                  <h2 class="title-uppercase text-primary " style="margin-bottom:3rem !important " >work exposure</h2>
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <p class="text-white" >Worked as an UI developer in a marketing consultancy named as Red Matter technology for 3.5 Months.</p>
+                      <ul class="text-white" >
+                        <li> Created multiple landing pages and micro-sites all by myself with help of given design.</li>
+                        <li> Collaborated with other backend developers to build full-scale functional websites.</li>
+                        <li> Worked with Digital marketing team to make website more SEO friendly with high performance.</li>
+                        <li>Communicated with clients to analyse their requirements to build a satisfactory website.</li>
+                        <li>Maintained Two full scale websites with continuous changes according to Client requirements  </li>
+    
+                      </ul>
+    
+
+                    </div>
+                    <div class="col-lg-4">
+                      <img src="./images/3426526.jpg"  width="100%" height="300px" >
+
+                    </div>
+                  </div>
+                
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- project section -->
+
+        
+<div class="pp-scrollable scrollable-projects text-white section">
+  <div class="scroll-wrap">
+    <div class="bg-changer">
+      <div class="section-bg" style="background-image:url(images/nishidha.png);"><div class="overlay"></div>  </div>
+      <div class="section-bg" style="background-image:url(images/svadha.jpg);"><div class="overlay"></div></div>
+      <div class="section-bg" style="background-image:url(images/cancerc.png);"><div class="overlay"></div></div>
+      <div class="section-bg" style="background-image:url(images/hearing_solution.jpg);"><div class="overlay"></div></div>
+      <div class="section-bg" style="background-image:url(images/brinnova.png);"><div class="overlay"></div></div>
+    </div>
+    <div class="scrollable-content">
+      <div class="vertical-centred">
+        <div class="boxed boxed-inner">
+          <div class="vertical-title hidden-xs hidden-sm"><span>MY works</span></div>
+          <div class="boxed">
+            <div class="container">
+              <div class="intro">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2 class="title-uppercase text-primary">latest projects</h2>
+                    <div class="row-project-box row">
+
+                      <!-- Project Item 1 -->
+                      <div class="col-project-box col-sm-6 col-md-4 col-lg-3">
+                        <a href="#project1" class="project-box popup-with-zoom-anim">
+                          <div class="project-box-inner">
+                            <h5>MY HOME NISHADA</h5>
+                            <div class="project-category">real estate</div>
+                          </div>
+                        </a>
+
+                        <!-- Project Modal Dialog 1 -->
+                        <div id="project1" class="container zoom-anim-dialog mfp-hide">
+                          <div class="row">
+                            <div class="col-lg-8"><img alt="" class="project-detail-img" src="images/sp-nishidha.png"></div>
+                            <div class="col-lg-4  ">
+                              <h1 class="text-primary title-uppercase" >Overview</h1>
+                              <p class="text-white">This was a kind of portfolio website for a real-estate property which has all the details about counstruction and Architecture. <br> <br> Containing a contact form so that the builder an approch the intersted client  </p>
+                              <h2  class="text-primary title-uppercase" > link </h2>
+                              <a href="https://myhomenishada.co.in/" target="_blank"> <p class="text-primary title-uppercase" >Click here to visit <br>https://myhomenishada.co.in/ </p></a>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Project Item 2 -->
+                      <div class="col-project-box col-sm-6 col-md-4 col-lg-3">
+                        <a href="#project2" class="project-box popup-with-zoom-anim">
+                          <div class="project-box-inner">
+                            <h5>Svadha mackenna's</h5>
+                            <div class="project-category">Real estate</div>
+                          </div>
+                        </a>
+
+                        <!-- Project Modal Dialog 2 -->
+                        <div id="project2" class="container zoom-anim-dialog mfp-hide">
+                          <div class="row">
+                            <div class="col-lg-8"><img alt="" class="project-detail-img" src="images/sp_svadha.png"></div>
+                            <div class="col-lg-4">
+
+                               <h1 class="text-primary title-uppercase" >Overview</h1>
+                              <p class="text-white">This was a kind of portfolio website for a real-estate property which has all the details about counstruction and Architecture. <br> <br> Containing a contact form so that the builder an approch the intersted client  </p>
+                              <h2  class="text-primary title-uppercase" > link </h2>
+                              <a href="https://svadhabuilders.in/mackennas/" target="_blank"> <p class="text-primary title-uppercase" >Click here to visit <br> https://svadhabuilders.in/mackennas/</p></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Project Item 3 -->
+                      <div class="col-project-box col-sm-6 col-md-4 col-lg-3">
+                        <a href="#project3" class="project-box popup-with-zoom-anim">
+                          <div class="project-box-inner">
+                            <h5>Cancer clinics</h5>
+                            <div class="project-category">Health care</div>
+                          </div>
+                        </a>
+
+                        <!-- Project Modal Dialog 3 -->
+                        <div id="project3" class="container zoom-anim-dialog mfp-hide">
+                          <div class="row">
+                            <div class="col-lg-8"><img alt="" class="project-detail-img" src="images/sp_cc.png"></div>
+                            <div class="col-lg-4">
+
+                              <h1 class="text-primary title-uppercase" >Overview</h1>
+                              <p class="text-white"> It was a landing page development for a health care organization to promote its various offers , page must be SEO optimised to attract clients online with the help of Digital marketing.  <br> <br> Containing a contact form so that the hospital marketing team can approch the intersted paitents  </p>
+                              <h2  class="text-primary title-uppercase" > link </h2>
+                              <a href="https://www.cancerclinics.in/breast-cancer-screening/" target="_blank"> <p class="text-primary title-uppercase" >Click here to visit <br> https://www.cancerclinics.in/breast-cancer-screening/</p></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Project Item 4 -->
+                      <div class="col-project-box col-sm-6 col-md-4 col-lg-3">
+                        <a href="#project4" class="project-box popup-with-zoom-anim">
+                          <div class="project-box-inner">
+                            <h5>Hearing solutions</h5>
+                            <div class="project-category">Health care</div>
+                          </div>
+                        </a>
+
+                        <!-- Project Modal Dialog 4 -->
+                        <div id="project4" class="container zoom-anim-dialog mfp-hide">
+                          <div class="row">
+                            <div class="col-lg-8"><img alt="" class="project-detail-img" src="images/sp-hearing-sol.png"></div>
+                            <div class="col-lg-4">
+                              
+                              <h1 class="text-primary title-uppercase" >Overview</h1>
+                              <p class="text-white"> It was a landing page development for a health care organization to promote its various offers and awareness about hearing problems and its solutions, page must be SEO optimised to attract clients online with the help of Digital marketing.  <br> <br> Containing a contact form so that the hospital marketing team can approch the intersted paitents  </p>
+                              <h2  class="text-primary title-uppercase" > link </h2>
+                              <a href="https://www.hearingsolutions.in/lp/" target="_blank"> <p class="text-primary title-uppercase" >Click here to visit <br> https://www.hearingsolutions.in/lp/</p></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Project Item 5 -->
+                      <div class="col-project-box col-sm-6 col-md-4 col-lg-3">
+                        <a href="#project5" class="project-box popup-with-zoom-anim">
+                          <div class="project-box-inner">
+                            <h5>Brinnova</h5>
+                            <div class="project-category">Health care</div>
+                          </div>
+                        </a>
+
+                        <!-- Project Modal Dialog 5 -->
+                        <div id="project5" class="container zoom-anim-dialog mfp-hide">
+                          <div class="row">
+                            <div class="col-lg-8"><img alt="" class="project-detail-img" src="images/sp_brinova.png"></div>
+                            <div class="col-lg-4">
+
+                              <h1 class="text-primary title-uppercase" >Overview</h1>
+                              <p class="text-white"> It was a website for Rehabilitation, Brinnova is the ultimate Centre for Transitional Care in Hyderabad, located in a noise-free, pollution-free, green environment. It is a facility geared towards anyone who is under treatment for Cancer, Neurological problems, Polytrauma, Cardiovascular problems, etc., serving as a bridge of healing that eases you gradually into normal life again.  </p>
+                              <h2  class="text-primary title-uppercase" > link </h2>
+                              <a href="https://www.brinnovacare.com/" target="_blank"> <p class="text-primary title-uppercase" >Click here to visit <br> https://www.brinnovacare.com/</p></a>
+                              
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    
+                     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+    
+
+
+
+    <!-- Section Contacts -->
+    <div class="pp-scrollable scrollable-contacts section">
+      <div class="scroll-wrap">
+        <div class="section-bg" style="background-image:url(images/bg_banner.jpg);"></div>
+        <div class="scrollable-content">
+          <div class="vertical-centred">
+            <div class="boxed boxed-inner">
+              <div class="vertical-title text-white hidden-xs hidden-sm"><span>contact</span></div>
+              <div class="boxed">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-4 ">
+                      <h2 class="title-uppercase text-primary "> contact me  </h2>
+                      <div class="form">
+                       <dl>
+                        <dt>NAME</dt>
+                        <dd><input type="text" id="vis-name"  name="fname" class="form-control" ></dd>
+                        <dt>MOBILE NUMBER</dt>
+                        <dd><input type="text" id="vis-no" name="mobile" class="form-control" ></dd>
+                        <dt>E-MAIL ID</dt>
+                        <dd><input type="email" id="vis-email"  name="email"  class="form-control" ></dd>
+                        </dl>
+
+                        <button class=" btn" onclick="submit_form()" type="submit">SUBMIT</button>
+                      </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-6 ">
+                      <h2 class="text-white">Get in touch with me via social media or email.</h2>
+                            <div class="social">
+                              <div><a href="https://www.linkedin.com/in/abhishek-sinha-297839247"><span class="bi bi-linkedin"></span> LinkedIn</a></div>
+                              <div><a href="https://instagram.com/_abhishek_sinha__?igshid=MzNlNGNkZWQ4Mg=="><spna class="bi bi-instagram"></spna> Instagram</a></div>
+                              <div><a href="https://github.com/abhi-shek-sinha"><span class="bi bi-github" ></span> GitHub</a></div>
+                              <div><a href="mailto:shek.abhi171097@gmail.com"><span class="bi bi-envelope-fill" ></span> Gmail</a></div>
+                              
+
+                            </div>
+
+
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/jquery.pagepiling.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyCwVuYiM-83l2IdjpT9uC0lg4jBm8-w4j8"></script> 
+  <script src="js/gmap.js"></script>
+
+  <!-- Scripts -->
+  <script src="js/scripts.js"></script> 
+</body>
+</html>
